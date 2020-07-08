@@ -1,0 +1,18 @@
+/* components/m-navbar/m-navbar.wxss */
+.navBox {
+  width: 100%; 
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navitem {
+
+}
+
+.active text{
+  color: rgb(228, 129, 129);
+  border-bottom: 5rpx solid rgb(228, 129, 129);
+  padding: 20rpx 10rpx;
+}

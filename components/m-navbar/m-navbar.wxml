@@ -1,0 +1,7 @@
+<!--components/m-navbar/m-navbar.wxml-->
+<view class="navBox">
+  <block wx:for="{{ navarr }}" wx:key="{{ index }}">
+    <view class="navitem {{ currentIndex == index? 'active' : '' }}" 
+          bindtap="changebar" data-index="{{ index }}"><text>{{ item }}</text></view>
+  </block>
+</view>

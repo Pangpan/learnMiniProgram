@@ -1,0 +1,4 @@
+/* components/my-com/my-com.wxss */
+.title {
+  background: yellow;
+}

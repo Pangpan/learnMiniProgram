@@ -1,0 +1,2 @@
+<!--components/m-select/m-select.wxml-->
+<view>当前组件内的计数为：{{ count }}</view>

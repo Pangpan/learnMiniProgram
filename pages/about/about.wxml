@@ -1,2 +1,15 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>{{ allData.origin }}</view>
+
+<!-- 弹框的展示 -->
+<!-- 1、toast -->
+<button size="mini" bindtap="handleShowToast">展示showToast</button>\n
+
+<!-- 2、modal -->
+<button size="mini" bindtap="handleShowModal">展示showModal</button>
+
+<!-- 3、loading -->
+<button size="mini" bindtap="handleShowLoading">加载中</button>
+
+<!-- 4、actionsheet -->
+<button size="mini" bindtap="handleshowActionSheet">展示底部弹出框</button>

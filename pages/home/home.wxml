@@ -1,3 +1,57 @@
 <!--pages/home/home.wxml-->
+
+
 <text class="title">hello world</text>
 <button size="mini">按钮</button>
+
+<input placeholder="请输入" bindinput="getInput" model:value="{{ info }}"></input>
+
+<!-- 2、自定义组件样式细节 -->
+<my-com></my-com>
+
+<!-- 3、给自定义组件传递数据、样式 -->
+<my-prop title="prop1" content="内容1" titleclass="red"></my-prop>
+<my-prop title="prop2"></my-prop>
+<my-prop></my-prop>
+
+<!-- 4、组件内部发出的事件 -->
+<my-event bindinscrease="numins"></my-event>
+<view>当前计数： {{ num }}</view>
+
+
+<!-- 5、练习自定义组件navbar -->
+<m-navbar navarr="{{ navbararr }}" bind:changebar="handleChangeBar"></m-navbar>
+
+
+<!-- 6、直接选中组件修改数据、调用方法 -->
+<!--    点击按钮修改组件中的数据 -->
+<button bindtap="changenum" size="mini">改变组件计数</button>
+<m-select id="m-select"></m-select>
+
+
+<view>--------------------------------------</view>
+
+<!-- 7、插槽的使用 -->
+<!-- 7.1、插槽的使用 -->
+<m-slot>
+  <view>这是单个插槽的内容</view>
+</m-slot>
+<m-slot>
+  <button size="mini">这是插槽中的按钮</button>
+</m-slot>
+<m-slot>
+  <image src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"></image>
+</m-slot>
+<m-slot>
+  <slider value="60"></slider>   <!-- 可以拖动的进度条组件 -->
+</m-slot>
+
+<!-- 7.2、 多个插槽的使用 -->
+<!--       注意事项： 1、要给每一个插槽起一个名字：name属性
+                    2、 必须在Component对象中添加一个选项 options -> multipleSlots: true -->
+<view>
+  <m-mslot>
+    <button size="mini" slot="slot2">我是多个插槽中的按钮</button>
+    <view slot="slot1">我是多个插槽中的文字</view>
+  </m-mslot>
+</view>

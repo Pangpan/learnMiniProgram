@@ -1,0 +1,4 @@
+/* components/my-event/my-event.wxss */
+.green {
+  background: rgb(180, 252, 180);
+}

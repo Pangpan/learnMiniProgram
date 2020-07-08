@@ -1,0 +1,6 @@
+<!--components/m-mslot/m-mslot.wxml-->
+<view>这是多个插槽的头</view>
+<view class="slot1"><slot name="slot1"></slot></view>
+<view class="slot2"><slot name="slot2"></slot></view>
+<view class="slot3"><slot name="slot3"></slot></view>
+<view>这是多个插槽的尾</view>

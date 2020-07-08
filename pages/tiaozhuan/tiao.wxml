@@ -1,0 +1,19 @@
+<!--pages/tiaozhuan/tiao.wxml-->
+<text>pages/tiaozhuan/tiao.wxml</text>
+<!-- 1、 navigator -->
+<navigator url="/pages/detail/detail?title=title">跳转到详情页detail</navigator>
+
+<!-- 2、navigator属性： open-type -->
+<navigator url="/pages/detail/detail" open-type="redirect">
+跳转到详情页（关闭前一个页面）
+</navigator>
+
+<navigator url="/pages/about/about" open-type="switchTab">
+跳转到tabbar页面
+</navigator>
+
+<navigator url="/pages/detail/detail" open-type="reLaunch">
+关闭所有页面
+</navigator>
+
+<view>{{ name }}</view>

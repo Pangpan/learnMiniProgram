@@ -1,0 +1,2 @@
+<!--components/my-com/my-com.wxml-->
+<view class="title">这是组件my-com的标题</view>

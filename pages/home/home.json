@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-com": "/components/my-com/my-com",
+    "my-prop": "/components/my-prop/my-prop",
+    "my-event": "/components/my-event/my-event",
+    "m-navbar": "/components/m-navbar/m-navbar",
+    "m-select": "/components/m-select/m-select",
+    "m-slot": "/components/m-slot/m-slot",
+    "m-mslot": "/components/m-mslot/m-mslot"
+  }
 }
